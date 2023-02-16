@@ -21,6 +21,10 @@ h1{
     margin-bottom: var(--fixed-margin);
 }
 
+h4, p{
+    margin-bottom: 6px;
+}
+
 .header_container{
     width: var(--width-container);
     margin: auto;
@@ -99,16 +103,19 @@ h1{
 .container_box_1{
     float: left;
     width: 30%;
+    box-shadow: 3px 3px 10px #CCCCCB;
 }
 
 .container_box_2{
     float: left;
     width: 30%;
     margin-left: 5%;
+    box-shadow: 3px 3px 10px #CCCCCB;
 }
 
 .container_box_3{
     float: right;
     width: 30%;
+    box-shadow: 3px 3px 10px #CCCCCB;
 }
 /* END -- struttura a 3 colonne */
