@@ -47,6 +47,22 @@ h1{
     color: white;
 }
 
+/* per la struttura a 2 colonne */
+.container_sub_box_1{
+    float: right;
+    width: 70%;
+}
+
+.container_sub_box_2{
+    float: left;
+    width: 20%;
+}
+
+.dimensions{
+    display: inline-block;
+    height: var(--box-height);
+}
+
 /* per la struttura a 3 colonne */
 .container_box_1{
     float: left;
