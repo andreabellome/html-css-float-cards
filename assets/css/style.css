@@ -4,12 +4,62 @@
     box-sizing: border-box;
 }
 
+:root {
+    --width-container: 90%;
+    --fixed-margin: 20px;
+    --box-height: 60px;
+    --n-box-row: 3; /* numero di boxes per riga */
+  }
+
+body {
+    font-family: "Fredoka One", sans-serif;
+}
+
 h1{
     color: #E53170;
+    margin-top: var(--fixed-margin);
+    margin-bottom: var(--fixed-margin);
 }
 
 .header_container{
-    width: 80%;
+    width: var(--width-container);
     margin: auto;
     text-align: center;
+}
+
+.main_container{
+    width: var(--width-container);
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: var(--fixed-margin);
+    margin-bottom: var(--fixed-margin);
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.box_spec{
+    height: var(--box-height);
+    background-color: #0F0E17;
+    color: white;
+}
+
+/* per la struttura a 3 colonne */
+.container_box_1{
+    float: left;
+    width: 30%;
+}
+
+.container_box_2{
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+}
+
+.container_box_3{
+    float: right;
+    width: 30%;
 }
