@@ -5,9 +5,9 @@
 }
 
 :root {
-    --width-container: 90%;
-    --fixed-margin: 20px;
-    --box-height: 60px;
+    --width-container: 80%;
+    --fixed-margin: 30px;
+    --box-height: 120px;
     --n-box-row: 3; /* numero di boxes per riga */
   }
 
@@ -30,7 +30,6 @@ h1{
 .main_container{
     width: var(--width-container);
     margin: 0 auto;
-    border: 1px solid black;
     margin-top: var(--fixed-margin);
     margin-bottom: var(--fixed-margin);
 }
@@ -47,23 +46,56 @@ h1{
     color: white;
 }
 
-/* per la struttura a 2 colonne */
+.email{
+    color: #13A2E4;
+}
+
+/* START -- struttura a 2 colonne */
 .container_sub_box_1{
     float: right;
     width: 70%;
+    margin-top: 7%;
+    padding-left: 5%;
 }
 
 .container_sub_box_2{
     float: left;
-    width: 20%;
+    width: 30%;
+    height: 100%;
 }
 
-.dimensions{
-    display: inline-block;
-    height: var(--box-height);
+.bg_img_1{
+    background: url(../../assets/img/male1.png) no-repeat;
+    background-size: cover;
 }
 
-/* per la struttura a 3 colonne */
+.bg_img_2{
+    background: url(../../assets/img/female1.png) no-repeat;
+    background-size: cover;
+}
+
+.bg_img_3{
+    background: url(../../assets/img/male2.png) no-repeat;
+    background-size: cover;
+}
+
+.bg_img_4{
+    background: url(../../assets/img/female2.png) no-repeat;
+    background-size: cover;
+}
+
+.bg_img_5{
+    background: url(../../assets/img/male3.png) no-repeat;
+    background-size: cover;
+}
+
+.bg_img_6{
+    background: url(../../assets/img/female3.png) no-repeat;
+    background-size: cover;
+}
+/* END -- struttura a 2 colonne */
+
+/* START -- struttura a 3 colonne */
 .container_box_1{
     float: left;
     width: 30%;
@@ -79,3 +111,4 @@ h1{
     float: right;
     width: 30%;
 }
+/* END -- struttura a 3 colonne */
